@@ -20,7 +20,8 @@ export async function getStaticProps(context) {
     const req = await fetch("https://60f5a30b18254c00176dffa9.mockapi.io/users/" + id)
     const res = await req.json()
     return {
-        props: {user: res}
+        props: {user: res},
+        revalidate: 2
     }
 }
 
