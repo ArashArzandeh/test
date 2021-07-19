@@ -1,4 +1,4 @@
-export async function getStaticPaths() => {
+export async function getStaticPaths() {
     const req = await fetch("https://60f5a30b18254c00176dffa9.mockapi.io/users")
     const res = await req.json()
 
