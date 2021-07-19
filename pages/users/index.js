@@ -6,7 +6,8 @@ export async function getStaticProps(context) {
     return {
         props: {
             res
-        }
+        },
+        revalidate: 1,
     }
 }
 
