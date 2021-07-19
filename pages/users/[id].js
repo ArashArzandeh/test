@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
 
 function User({ user }) {
     console.log(user)
-    if (!user) return(
+    if (!user.name) return(
         <div> Loading </div>
     )
     return (
