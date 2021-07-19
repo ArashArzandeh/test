@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 
     const req = await fetch("https://60f5a30b18254c00176dffa9.mockapi.io/users")
     const res = await req.json()
