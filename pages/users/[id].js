@@ -1,18 +1,18 @@
-export async function getStaticPaths() {
-    const req = await fetch("https://60f5a30b18254c00176dffa9.mockapi.io/users")
-    const res = await req.json()
+// export async function getStaticPaths() {
+//     const req = await fetch("https://60f5a30b18254c00176dffa9.mockapi.io/users")
+//     const res = await req.json()
 
-    const paths = res.map(item => {
-        return {
-            params: { id: item.id.toString() }
-        }
-    })
+//     const paths = res.map(item => {
+//         return {
+//             params: { id: item.id.toString() }
+//         }
+//     })
 
-    return {
-        paths,
-        fallback: 'blocking'
-    }
-}
+//     return {
+//         paths,
+//         fallback: 'blocking'
+//     }
+// }
 
 
 export async function getStaticProps(context) {
